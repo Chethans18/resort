@@ -5,11 +5,16 @@ body {
     box-sizing: border-box;
 }
 
+/* .position {
+    position: fixed;
+} */
+
 nav {
     background-color: #161A30;
     overflow: hidden;
     padding: 10px;
     display: flex;
+    margin-top: 0;
 }
 
 nav a {
@@ -40,7 +45,7 @@ nav a:hover {
 
 .photo-container img {
     width: 100%;
-    height: auto;
+    height: 400px;
 }
 
 .photo-container .photo-list {
@@ -50,12 +55,18 @@ nav a:hover {
 }
 
 .photo-container .photo-item {
-    flex: 0 0 calc(33.3333% - 10px);
+    flex: 1;
     margin-bottom: 10px;
 }
 
 @media (max-width: 767px) {
     .photo-container .photo-item {
-        flex: 0 0 calc(50% - 10px);
+        flex: 0 0 90%;
+        margin: 0 auto;
+    }
+
+    nav {
+        flex-direction: column;
+
     }
 }
