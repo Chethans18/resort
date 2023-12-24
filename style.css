@@ -112,6 +112,11 @@ nav a:hover {
     font-size: 20px;
 }
 
+main div {
+    width: 90%;
+    margin: 10px auto;
+}
+
 footer {
     background-color: #333;
     color: #fff;
